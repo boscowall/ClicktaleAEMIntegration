@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="nt:unstructured"
+            title="Sample Settings"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tmsserverurl
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="PID"
+                        fieldDescription="Use the PID here"
+                        name="./pid"
+                        xtype="textfield">
+                    <listeners
+                            jcr:primaryType="nt:unstructured"
+                            change="function(comp) {CQ.cloudservices.getEditOk().enable();}"/>
+                </tmsserverurl>
+                <tmsconfigid
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Integration Token"
+                        fieldDescription="Use a customer specific Integration Token here"
+                        name="./integrationToken"
+                        xtype="textfield">
+                    <listeners
+                            jcr:primaryType="nt:unstructured"
+                            change="function(comp) {CQ.cloudservices.getEditOk().enable();}"/>
+                </tmsconfigid>                        
+            </items>
+        </general>
+    </items>
+</jcr:root>

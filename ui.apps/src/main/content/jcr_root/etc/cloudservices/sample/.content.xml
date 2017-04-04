@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2012-01-10T16:53:07.216+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/sample/templates/sample-servicepage"
+        jcr:description="Sample Connection desciption"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Sample Connector"
+        sling:resourceType="cq/cloudserviceconfigs/components/servicepage"
+        descriptionExtended="Sample Connector description extended."
+        description="Sample Connector description."
+        inclusionRank="{Long}202"
+        ranking="10"
+        allowMultiple="{Boolean}true"
+        serviceAdminUrl="http://www.adobe.com/sample/getting-started"
+        serviceUrl="http://www.adobe.com/sample/learn-more"
+        serviceUrlLabel="Sample Connector"
+        thumbnailPath="/apps/sample/templates/sample-servicepage/thumbnail.png"/>
+</jcr:root>

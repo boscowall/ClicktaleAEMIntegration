@@ -3,6 +3,6 @@
     <filter root="/apps/sample">
         <exclude pattern="/apps/sample/install" />
     </filter>
-    <filter root="/apps/sling" />
-    <filter root="/etc/designs/sample"/>
+    <filter root="/apps/wcm/core" />
+    <filter root="/etc/cloudservices/sample" mode="update" />
 </workspaceFilter>
