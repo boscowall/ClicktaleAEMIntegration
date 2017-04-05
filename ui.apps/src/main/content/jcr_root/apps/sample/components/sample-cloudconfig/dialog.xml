@@ -10,7 +10,7 @@
             <items jcr:primaryType="cq:WidgetCollection">
                 <tmsserverurl
                         jcr:primaryType="cq:Widget"
-                        fieldLabel="PID"
+                        fieldLabel="WID"
                         fieldDescription="Use the PID here"
                         name="./pid"
                         xtype="textfield">

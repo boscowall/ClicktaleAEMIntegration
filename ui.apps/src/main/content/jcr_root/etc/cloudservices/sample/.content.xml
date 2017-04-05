@@ -14,8 +14,8 @@
         inclusionRank="{Long}202"
         ranking="10"
         allowMultiple="{Boolean}true"
-        serviceAdminUrl="http://www.adobe.com/sample/getting-started"
-        serviceUrl="http://www.adobe.com/sample/learn-more"
+        serviceAdminUrl="http://www.adobe.com"
+        serviceUrl="http://www.CLICKTALE.COM"
         serviceUrlLabel="Sample Connector"
         thumbnailPath="/apps/sample/templates/sample-servicepage/thumbnail.png"/>
 </jcr:root>

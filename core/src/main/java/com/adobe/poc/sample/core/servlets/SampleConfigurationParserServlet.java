@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.apache.sling.commons.json.JSONException;
 import org.apache.sling.commons.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.day.cq.commons.inherit.HierarchyNodeInheritanceValueMap;
 import com.day.cq.commons.inherit.InheritanceValueMap;
@@ -30,8 +32,9 @@ public class SampleConfigurationParserServlet extends SlingSafeMethodsServlet {
 	String pid;
 
 	String integrationToken;
+	
+	private static final Logger log = LoggerFactory.getLogger(SampleConfigurationParserServlet.class);
 
-	String log;
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) {
 
 		response.setContentType("application/json");
@@ -60,6 +63,7 @@ public class SampleConfigurationParserServlet extends SlingSafeMethodsServlet {
 
 	private void getpidAndintegrationToken(InheritanceValueMap pageProperties) {
 		String[] services = (String[]) pageProperties.getInherited("cq:cloudserviceconfigs", String[].class);
+		log.warn("Services are {}", services);
 		Configuration cfg = cfgMgr.getConfiguration("sample", services);
 		if (cfg != null) {
 			this.pid = (String) cfg.get("pid", null);
