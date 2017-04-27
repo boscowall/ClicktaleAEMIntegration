@@ -22,7 +22,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.adobe.poc</groupId>
-        <artifactId>sample</artifactId>
+        <artifactId>clicktale</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,10 +30,10 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>sample.ui.apps</artifactId>
+    <artifactId>clicktale.ui.apps</artifactId>
     <packaging>content-package</packaging>
-    <name>Sample - UI apps</name>
-    <description>UI apps package for Sample</description>
+    <name>Clicktale - UI apps</name>
+    <description>UI apps package for Clicktale</description>
 
     <!-- <scm>
         <connection></connection>
@@ -122,8 +122,8 @@
                     <embeddeds>
                         <embedded>
                             <groupId>com.adobe.poc</groupId>
-                            <artifactId>sample.core</artifactId>
-                            <target>/apps/sample/install</target>
+                            <artifactId>clicktale.core</artifactId>
+                            <target>/apps/clicktale/install</target>
                         </embedded>
                     </embeddeds>
                 </configuration>
@@ -155,6 +155,7 @@
                         </executions>
                         <configuration>
                             <targetURL>http://${aem.host}:${aem.port}/crx/packmgr/service.jsp</targetURL>
+                            <useProxy>false</useProxy> 
                             <failOnError>true</failOnError>
                             <failOnMissingEmbed>true</failOnMissingEmbed>
                         </configuration>
@@ -197,7 +198,7 @@
     <dependencies>
         <dependency>
             <groupId>com.adobe.poc</groupId>
-            <artifactId>sample.core</artifactId>
+            <artifactId>clicktale.core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

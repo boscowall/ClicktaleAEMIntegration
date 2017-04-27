@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2012-01-10T16:53:07.216+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/clicktale/templates/clicktale-servicepage"
+        jcr:description="Enable Heatmpas with the Clicktale Connector "
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Clicktale Connector"
+        sling:resourceType="cq/cloudserviceconfigs/components/servicepage"
+        descriptionExtended="Clicktale, the enterprise leader in Digital Customer Experience, enables businesses to maximize revenues by optimizing the way people experience the web and mobile."
+        description="Enable Heatmaps and Session Replay for each page viewed in Adobe Experience Manager. Understand customer behavior before making critical changes to your web site."
+        inclusionRank="{Long}202"
+        ranking="10"
+        allowMultiple="{Boolean}true"
+        serviceAdminUrl="http://www.clicktale.com/solutions/extend-your-ecosystem/"
+        serviceUrl="http://www.clicktale.com/solutions/extend-your-ecosystem/"
+        serviceUrlLabel="Clicktale Connector"
+        thumbnailPath="/apps/clicktale/templates/clicktale-servicepage/thumbnail.png"/>
+</jcr:root>

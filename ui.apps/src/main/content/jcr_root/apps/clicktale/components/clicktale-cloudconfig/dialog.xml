@@ -5,29 +5,20 @@
     <items jcr:primaryType="cq:WidgetCollection">
         <general
             jcr:primaryType="nt:unstructured"
-            title="Sample Settings"
+            title="Clicktale Settings"
             xtype="panel">
             <items jcr:primaryType="cq:WidgetCollection">
                 <tmsserverurl
                         jcr:primaryType="cq:Widget"
-                        fieldLabel="WID"
-                        fieldDescription="Use the PID here"
+                        fieldLabel="Project ID"
+                        fieldDescription="Enter the Project ID here."
                         name="./pid"
                         xtype="textfield">
                     <listeners
                             jcr:primaryType="nt:unstructured"
                             change="function(comp) {CQ.cloudservices.getEditOk().enable();}"/>
                 </tmsserverurl>
-                <tmsconfigid
-                        jcr:primaryType="cq:Widget"
-                        fieldLabel="Integration Token"
-                        fieldDescription="Use a customer specific Integration Token here"
-                        name="./integrationToken"
-                        xtype="textfield">
-                    <listeners
-                            jcr:primaryType="nt:unstructured"
-                            change="function(comp) {CQ.cloudservices.getEditOk().enable();}"/>
-                </tmsconfigid>                        
+                                      
             </items>
         </general>
     </items>

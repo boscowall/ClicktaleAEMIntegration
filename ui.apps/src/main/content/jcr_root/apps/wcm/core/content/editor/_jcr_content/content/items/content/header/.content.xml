@@ -14,8 +14,8 @@
                                     sling:orderBefore="classicui"
                                     class="js-editor-PageInfo-closePopover editor-PageInfo-action open-heatmap"
                                     minimal="{Boolean}true"
-                                    text="View Heatmap"
-                                    title="View Heatmap">
+                                    text="Clicktale Heatmap"
+                                    title="Clicktale Heatmap">
                                     <layoutConfig
                                         jcr:primaryType="nt:unstructured"
                                         interactive="{Boolean}true"/>

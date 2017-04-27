@@ -1,4 +1,4 @@
-package com.adobe.poc.sample.core.servlets;
+package com.adobe.poc.clicktale.core.servlets;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -16,11 +16,13 @@ import org.slf4j.LoggerFactory;
 
 import com.day.cq.commons.inherit.HierarchyNodeInheritanceValueMap;
 import com.day.cq.commons.inherit.InheritanceValueMap;
+import com.day.cq.wcm.api.Page;
+import com.day.cq.wcm.api.PageManager;
 import com.day.cq.wcm.webservicesupport.Configuration;
 import com.day.cq.wcm.webservicesupport.ConfigurationManager;
 
-@SlingServlet(methods = "GET", paths = "/bin/sample/properties")
-public class SampleConfigurationParserServlet extends SlingSafeMethodsServlet {
+@SlingServlet(methods = "GET", paths = "/bin/clicktale/properties")
+public class ClicktaleConfigurationParserServlet extends SlingSafeMethodsServlet {
 
 	/**
 	 * 
@@ -30,10 +32,8 @@ public class SampleConfigurationParserServlet extends SlingSafeMethodsServlet {
 	ConfigurationManager cfgMgr;
 
 	String pid;
-
-	String integrationToken;
 	
-	private static final Logger log = LoggerFactory.getLogger(SampleConfigurationParserServlet.class);
+	private static final Logger log = LoggerFactory.getLogger(ClicktaleConfigurationParserServlet.class);
 
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) {
 
@@ -45,12 +45,13 @@ public class SampleConfigurationParserServlet extends SlingSafeMethodsServlet {
 		ResourceResolver resolver = request.getResourceResolver();
 		cfgMgr = resolver.adaptTo(ConfigurationManager.class);
 		Resource currentResource = resolver.resolve(path);
-		InheritanceValueMap pageProperties = new HierarchyNodeInheritanceValueMap(currentResource);
-		getpidAndintegrationToken(pageProperties);
+		PageManager pageManager = resolver.adaptTo(PageManager.class);
+		Page currentPage = pageManager.getContainingPage(currentResource);
+		InheritanceValueMap pageProperties = new HierarchyNodeInheritanceValueMap(currentPage.getContentResource());
+		getPid(pageProperties);
 
 		try {
 			jsonObject.put("pid", pid);
-			jsonObject.put("integrationToken", integrationToken);
 			response.getWriter().print(jsonObject.toString());
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
@@ -61,13 +62,12 @@ public class SampleConfigurationParserServlet extends SlingSafeMethodsServlet {
 		}
 	}
 
-	private void getpidAndintegrationToken(InheritanceValueMap pageProperties) {
+	private void getPid(InheritanceValueMap pageProperties) {
 		String[] services = (String[]) pageProperties.getInherited("cq:cloudserviceconfigs", String[].class);
 		log.warn("Services are {}", services);
-		Configuration cfg = cfgMgr.getConfiguration("sample", services);
+		Configuration cfg = cfgMgr.getConfiguration("clicktale", services);
 		if (cfg != null) {
 			this.pid = (String) cfg.get("pid", null);
-			this.integrationToken = cfg.get("integrationToken", null);
 		}
 
 	}

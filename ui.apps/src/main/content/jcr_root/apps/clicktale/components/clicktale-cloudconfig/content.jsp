@@ -30,18 +30,16 @@
     String resPath = resource.getPath().replace("/jcr:content", "");
 %>
 <div>
-    <h3><%= i18n.get("Sample Settings") %></h3>
+    <h3><%= i18n.get("Clicktale Settings") %></h3>
     <img src="<%= xssAPI.encodeForHTMLAttr(thumbnailPath) %>" alt="<%= xssAPI.encodeForHTMLAttr(serviceName) %>" style="float: left;" />
     <ul style="float: left; margin: 0px;">
         <li><div class="li-bullet"><strong><%=
-        i18n.get("To get a free trial account visit www.adobe.com/sample.html") %>
+        i18n.get("For more technical integrations visit www.clicktale.com/solutions/extend-your-ecosystem/") %>
         </strong></div></li>
         <li><div class="li-bullet"><strong><%= i18n.get("PID") %>: </strong><%=
         xssAPI.encodeForHTML(properties.get("pid", "")) %></div></li>
-        <li><div class="li-bullet"><strong><%= i18n.get("Integration Token") %>: </strong><%=
-        xssAPI.encodeForHTML(properties.get("integrationToken", "").replaceAll(".", "*")) %></div></li>
         <li class="config-successful-message when-config-successful" style="display: none">
             <%=
-            i18n.get("Sample configuration is successful.") %></li>
+            i18n.get("Clicktale configuration is successful.") %></li>
     </ul>
 </div>
