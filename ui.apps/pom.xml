@@ -30,7 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>clicktale.ui.apps</artifactId>
+    <artifactId>ClicktaleAEMIntegration</artifactId>
     <packaging>content-package</packaging>
     <name>Clicktale - UI apps</name>
     <description>UI apps package for Clicktale</description>
