@@ -1,4 +1,4 @@
-package com.adobe.poc.clicktale.core.servlets;
+package com.clicktale.heatmap.clicktale.core.servlets;
 
 import java.io.IOException;
 import java.util.Arrays;

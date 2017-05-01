@@ -21,7 +21,7 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.adobe.poc</groupId>
+        <groupId>com.clicktale.heatmap</groupId>
         <artifactId>clicktale</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
@@ -118,10 +118,10 @@
                     <filterSource>${basedir}/META-INF/vault/filter.xml</filterSource>
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
-                    <group>POC</group>
+                    <group>Clicktale</group>
                     <embeddeds>
                         <embedded>
-                            <groupId>com.adobe.poc</groupId>
+                            <groupId>com.clicktale.heatmap</groupId>
                             <artifactId>clicktale.core</artifactId>
                             <target>/apps/clicktale/install</target>
                         </embedded>
@@ -197,7 +197,7 @@
     <!-- ====================================================================== -->
     <dependencies>
         <dependency>
-            <groupId>com.adobe.poc</groupId>
+            <groupId>com.clicktale.heatmap</groupId>
             <artifactId>clicktale.core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

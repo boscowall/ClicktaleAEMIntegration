@@ -2,12 +2,12 @@
 <jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="vlt:PackageDefinition"
     buildCount="1"
-    builtWith="Adobe Experience Manager-6.1.0.20150507"
+    builtWith="Adobe Experience Manager-6.2.0.20160406"
     fixedBugs=""
-    providerLink="http://www.adobe.com"
-    providerName="Adobe Systems, Inc"
-    providerUrl="http://www.adobe.com"
-    testedWith="AEM6.1"
-    version="1.0">
+    providerLink="http://www.clicktale.com"
+    providerName="Clicktale"
+    providerUrl="http://www.clicktale.com"
+    testedWith="AEM6.2.0"
+    version="1.0.0">
     <screenshots jcr:primaryType="nt:unstructured"/>
 </jcr:root>

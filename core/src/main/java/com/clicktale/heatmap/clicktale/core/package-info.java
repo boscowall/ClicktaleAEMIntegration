@@ -15,7 +15,7 @@
  */
 @Version("1.0")
 @Export(optional = "provide:=true")
-package com.adobe.poc.clicktale.core;
+package com.clicktale.heatmap.clicktale.core;
 
 import aQute.bnd.annotation.Export;
 import aQute.bnd.annotation.Version;

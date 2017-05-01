@@ -18,7 +18,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.adobe.poc</groupId>
+        <groupId>com.clicktale.heatmap</groupId>
         <artifactId>clicktale</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
@@ -48,7 +48,7 @@
                         <!-- Support for javax.inject,version=[0.0,1) - Cannot be resolved issue -->
                         <Import-Package>javax.inject;version=0.0.0,*</Import-Package>
                         <Sling-Model-Packages>
-                            com.adobe.poc.clicktale.core
+                            com.clicktale.heatmap.clicktale.core
                         </Sling-Model-Packages>
                     </instructions>
                 </configuration>
