@@ -23,7 +23,7 @@
     <parent>
         <groupId>com.clicktale.heatmap</groupId>
         <artifactId>clicktale</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -199,7 +199,7 @@
         <dependency>
             <groupId>com.clicktale.heatmap</groupId>
             <artifactId>clicktale.core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
 
 		<dependency>

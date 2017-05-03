@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:primaryType="cq:Dialog"
-    xtype="dialog">
-    <items jcr:primaryType="cq:WidgetCollection">
-        <general
-            jcr:primaryType="nt:unstructured"
-            title="Clicktale Settings"
-            xtype="panel">
-            <items jcr:primaryType="cq:WidgetCollection">
-                <tmsserverurl
-                        jcr:primaryType="cq:Widget"
-                        fieldLabel="Project ID"
-                        fieldDescription="Enter the Project ID here."
-                        name="./pid"
-                        xtype="textfield">
-                    <listeners
-                            jcr:primaryType="nt:unstructured"
-                            change="function(comp) {CQ.cloudservices.getEditOk().enable();}"/>
-                </tmsserverurl>
-                                      
-            </items>
-        </general>
-    </items>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="cq:Dialog"
+	xtype="dialog">
+	<items jcr:primaryType="cq:WidgetCollection">
+		<general jcr:primaryType="nt:unstructured" title="Clicktale Settings"
+			xtype="panel">
+			<items jcr:primaryType="cq:WidgetCollection">
+				<projectid jcr:primaryType="cq:Widget" fieldLabel="Project ID"
+					fieldDescription="Enter the Project ID here." name="./pid"
+					enableKeyEvents="{Boolean}true"
+					allowBlank="{Boolean}false" xtype="textfield">
+
+
+					<listeners jcr:primaryType="nt:unstructured"
+						keydown="function(comp) {CQ.cloudservices.getEditOk().enable();}" />
+				</projectid>
+
+			</items>
+		</general>
+	</items>
 </jcr:root>

@@ -2,7 +2,6 @@
  * Custom JavaScript to open a heatmap URL on a different browser window
  */
 (function(document, $) {
-
 	var ui = $(window).adaptTo("foundation-ui");
     $(document).on("click", ".open-heatmap", function(e) {
         var path = Granite.HTTP.externalize(window.location.pathname).replace(/\/[^/]*/, '');
@@ -28,13 +27,11 @@
         }
         else
         {
-        	var url = "http://www.clicktale.com?Type=OverlayReport&ReportType=ClickHeatmap&PID=";
+        	var url = "http://subs.app.clicktale.com/AggregatedReport.aspx?Type=OverlayReport&ReportType=MouseMoveHeatmap&UrlMode=Containing&GenerateReportNow=true&PID=";
         	url += json.pid;
         	url += "&Location=";
-        	url += path;
+        	url += encodeURI(path);
 			
-			//alert('3');
-        	//alert(url);
         	window.open(url, '_blank');
         }
     });

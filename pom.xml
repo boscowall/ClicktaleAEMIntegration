@@ -19,7 +19,7 @@
     <groupId>com.clicktale.heatmap</groupId>
     <artifactId>clicktale</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     
     <modules>
         <module>core</module>
@@ -379,6 +379,11 @@
     <!-- ====================================================================== -->
     <dependencyManagement>
         <dependencies>
+        <dependency>
+            <groupId>com.clicktale.heatmap</groupId>
+            <artifactId>clicktale</artifactId>
+            <version>1.0.0</version>
+        </dependency>
             <!-- OSGi Dependencies -->
             <dependency>
                 <groupId>org.apache.felix</groupId>
