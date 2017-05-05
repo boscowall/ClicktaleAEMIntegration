@@ -10,7 +10,7 @@
         jcr:title="Clicktale Connector"
         sling:resourceType="cq/cloudserviceconfigs/components/servicepage"
         descriptionExtended="Clicktale, the enterprise leader in Digital Customer Experience, enables businesses to maximize revenues by optimizing the way people experience the web and mobile."
-        description="Enable Heatmaps and Session Replay for each page viewed in Adobe Experience Manager. Understand customer behavior before making critical changes to your web site."
+        description="Clicktale helps your business achieve better outcomes by reflecting true user experiences and allowing you to see the individuals behind your data.  Step into your visitors shoes and experience your digital touchpoints as they do.  Use the Clicktale Connector to enable Heatmaps and Session Replay for each page viewed in Adobe Experience Manager."
         inclusionRank="{Long}202"
         ranking="10"
         allowMultiple="{Boolean}true"
