@@ -33,7 +33,7 @@
     <artifactId>ClicktaleAEMIntegration</artifactId>
     <packaging>content-package</packaging>
     <name>Clicktale - UI apps</name>
-    <description>UI apps package for Clicktale</description>
+    <description>Clicktale integration for heatmaps/session replay.</description>
 
     <!-- <scm>
         <connection></connection>

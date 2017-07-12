@@ -1,6 +1,6 @@
-# Sample AEM project template
+# Clicktale AEM project template
 
-This is a sample project template for overlay applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+This is first integration for AEM to show overlays.
 
 ## Modules
 
