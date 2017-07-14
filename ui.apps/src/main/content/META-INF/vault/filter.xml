@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/clicktale">
-        <exclude pattern="/apps/clicktale/install" />
     </filter>
     <filter root="/apps/wcm/core" />
     <filter root="/etc/cloudservices/clicktale" mode="update" />

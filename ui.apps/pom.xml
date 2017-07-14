@@ -33,7 +33,7 @@
     <artifactId>ClicktaleAEMIntegration</artifactId>
     <packaging>content-package</packaging>
     <name>Clicktale - UI apps</name>
-    <description>Clicktale integration for heatmaps/session replay.</description>
+    <description>Clicktale helps your business achieve better outcomes by reflecting true user experiences and allowing you to see the individuals behind your data.  Step into your visitors shoes and experience your digital touchpoints as they do.  Use the Clicktale Connector to enable Heatmaps and Session Replay for each page viewed in Adobe Experience Manager.</description>
 
     <!-- <scm>
         <connection></connection>
